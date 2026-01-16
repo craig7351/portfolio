@@ -20,9 +20,8 @@ const PostCard = ({ post, onClick, index }: PostCardProps) => {
   const hasVideo = post.media.some(m => m.type === "video");
   const imageCount = post.media.filter(m => m.type === "image").length;
   
-  // Vary card heights for masonry effect
-  const heights = ["h-72", "h-80", "h-96", "h-72", "h-80"];
-  const cardHeight = heights[index % heights.length];
+  // Fixed card height for uniform layout
+  const cardHeight = "h-80";
 
   return (
     <motion.article
