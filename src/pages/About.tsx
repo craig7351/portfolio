@@ -149,13 +149,13 @@ const About = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/craig7351"
                   className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:craig7351@gmail.com"
                   className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors"
                 >
                   <Mail className="w-5 h-5" />
