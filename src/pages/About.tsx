@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { User, Mail, MapPin, Briefcase, GraduationCap, Award, Sparkles, Camera, Code2, Facebook, ExternalLink, Github } from "lucide-react";
+import avatarImage from "@/assets/avatar.jpg";
 import { NavLink } from "@/components/NavLink";
 const About = () => {
   const skills = [{
@@ -74,9 +75,11 @@ const About = () => {
             {/* Avatar */}
             <div className="relative">
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary to-chart-2 p-1">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                  <User className="w-24 h-24 md:w-32 md:h-32 text-muted-foreground" />
-                </div>
+                <img 
+                  src={avatarImage} 
+                  alt="Avatar" 
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
               <div className="absolute -bottom-2 -right-2 p-3 bg-primary rounded-full">
                 <Sparkles className="w-6 h-6 text-primary-foreground" />
