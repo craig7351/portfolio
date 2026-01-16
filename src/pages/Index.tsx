@@ -45,7 +45,7 @@ const Index = () => {
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 AI Creative · 探索 AI 與創意的邊界
+            © 2024 Book-Ai Creative · 探索 AI 與創意的邊界
           </p>
         </div>
       </footer>
