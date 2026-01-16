@@ -9,7 +9,7 @@ import {
   Sparkles,
   Camera,
   Code2,
-  Github,
+  Facebook,
   Linkedin,
   Twitter,
   ExternalLink
@@ -131,7 +131,7 @@ const About = () => {
               {/* Social Links */}
               <div className="flex gap-4 mt-6 justify-center md:justify-start">
                 <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
-                  <Github className="w-5 h-5" />
+                  <Facebook className="w-5 h-5" />
                 </a>
                 <a href="#" className="p-3 rounded-full bg-card border border-border hover:border-primary/50 transition-colors">
                   <Linkedin className="w-5 h-5" />
