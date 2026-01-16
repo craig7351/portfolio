@@ -60,7 +60,7 @@ const About = () => {
       <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <NavLink to="/" className="text-xl font-bold text-primary hover:opacity-80 transition-opacity">
-            AI Creative
+            Book-Ai Creative
           </NavLink>
           <div className="flex items-center gap-6">
             <NavLink 
@@ -315,7 +315,7 @@ const About = () => {
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 AI Creative · 探索 AI 與創意的邊界
+            © 2024 Book-Ai Creative · 探索 AI 與創意的邊界
           </p>
         </div>
       </footer>

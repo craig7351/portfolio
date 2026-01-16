@@ -8,7 +8,7 @@ const SiteNav = () => {
           to="/" 
           className="text-xl font-bold text-primary hover:opacity-80 transition-opacity"
         >
-          AI Creative
+          Book-Ai Creative
         </NavLink>
         <div className="flex items-center gap-6">
           <NavLink 

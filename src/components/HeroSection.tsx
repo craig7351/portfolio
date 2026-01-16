@@ -26,7 +26,7 @@ const HeroSection = () => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <span className="bg-gradient-to-r from-primary via-chart-2 to-primary bg-clip-text text-transparent">
-              AI Creative
+              Book-Ai Creative
             </span>
           </motion.h1>
           
