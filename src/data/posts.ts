@@ -2,6 +2,10 @@ import coverAiTech from "@/assets/cover-ai-tech.jpg";
 import coverPortrait from "@/assets/cover-portrait.jpg";
 import coverCyberpunk from "@/assets/cover-cyberpunk.jpg";
 import coverVibecoding from "@/assets/cover-vibecoding.jpg";
+import imgAiCss1 from "@/assets/(1).webp";
+import imgAiCss2 from "@/assets/(2).webp";
+import imgAiCss3 from "@/assets/(3).webp";
+import imgAiCss4 from "@/assets/(4).webp";
 
 export interface MediaItem {
   type: "image" | "video";
@@ -23,30 +27,43 @@ export interface Post {
 export const posts: Post[] = [
   {
     id: 1,
-    title: "Stable Diffusion 進階提示詞工程",
-    date: "2024-01-15",
+    title: "[AI CSS 切圖+應用]",
+    date: "2026-01-16",
     category: "AI技術教學",
-    tags: ["Stable Diffusion", "Prompt Engineering", "AI Art"],
-    summary: "深入探討如何透過精確的提示詞組合生成專業級 AI 圖像，包含負面提示詞優化技巧...",
-    content: `# Stable Diffusion 進階提示詞工程
+    tags: ["AI", "CSS", "Gemini", "Canvas", "Vibecoding"],
+    summary: "目的是透過AI來想辦法取得一張小圖在大圖中的位置存成JSON. 之後網頁要show小圖的時候, 就可以直接display",
+    content: `[AI CSS 切圖+應用]
+目的是透過AI來想辦法取得一張小圖在大圖中的位置存成JSON.
+之後網頁要show小圖的時候, 就可以直接display
 
-在這篇教學中，我們將深入探討如何撰寫高效的提示詞來生成高品質的 AI 圖像。
+工具: Gemini - Canvas
+Canvas share link:  https://gemini.google.com/share/d499005233e8
+作法:
+1.透過那個link, 下次有新圖片(要重新切圖), 把圖片餵給 Gemini (圖片要有文字跟圖片都表格排序) 
+透過Gemini自然語言再來修改這個app
+文字為key, "幫我用這張圖片的文字內容 重新生成綠框"
+做好以後 就可以進去網頁 手動調整綠框 最後copy 存成JSON
 
-## 基礎結構
+2.
+VibeCoding的時候:
+圖片上傳: https://cdn.imgchest.com
+圖片網址 https://cdn.imgchest.com/files/cda7558d323b.png
+然後給AI圖片網址跟CSS 切版JSON, 然後跟他說
+"key為用品名, 在該用品名的頁面根據JSON讀到對應用品的圖片"
+所以他就可以再紅茶的商品頁頁show紅茶的圖了!!!
 
-一個好的提示詞通常包含以下元素：
-- **主題描述**: 你想生成什麼
-- **風格關鍵字**: 藝術風格、攝影風格
-- **品質修飾詞**: masterpiece, best quality, ultra detailed
-
-## 進階技巧
-
-使用權重語法 \`(keyword:1.5)\` 來強調特定元素...`,
+Ps.
+切圖的圖片生成方法: 
+先用Banana 讀入飲料JSON, 請他
+"用上面品名 畫出一張列表, 日本可愛漫畫風格, 要出現所有飲料圖案 跟品名, 每一杯飲料品名跟圖案要固定同樣大小的表格"
+你就會得到附件的圖.`,
     media: [
-      { type: "image", url: coverAiTech },
-      { type: "image", url: coverAiTech }
+      { type: "image", url: imgAiCss1 },
+      { type: "image", url: imgAiCss2 },
+      { type: "image", url: imgAiCss3 },
+      { type: "image", url: imgAiCss4 }
     ],
-    coverImage: coverAiTech
+    coverImage: imgAiCss1
   },
   {
     id: 2,
