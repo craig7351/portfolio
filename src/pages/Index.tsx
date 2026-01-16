@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import CategoryNav from "@/components/CategoryNav";
 import PostGrid from "@/components/PostGrid";
 import PostModal from "@/components/PostModal";
+import SiteNav from "@/components/SiteNav";
 import { Post } from "@/data/posts";
 
 const Index = () => {
@@ -31,6 +32,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SiteNav />
       <HeroSection />
       <CategoryNav
         activeCategory={activeCategory}
